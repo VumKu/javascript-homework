@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .word{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 0 20px 0;
+        }
+        .title{
+            font-family: 'Monoton', cursive;
+            font-size: 50px;
+            color: rgb(241, 179, 205);
+            text-align: center;
+            margin: 40px 0 0 0;
+        }
+        .info{
+            color: rgb(209, 209, 209);
+            text-align: center;
+        }
+
+        .content{
+            display: flex;
+            margin: 50px 0 0 0;
+        }
+        .counterBox, .answer{
+            border: 1px solid rgb(198, 155, 221);
+            border-radius: 10px;
+            padding: 50px;
+
+            margin: 20px 30px;
+            color: #fff;
+        }
+        .answer{
+            width: 232px;
+        }
+        #CommonMultipleAnswer{
+            list-style-type: none;
+            padding: 0;
+        }
+        .countBtn{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="word">
+        <p class="title">Prime Number</p>
+        <p class="info">計算質數</p>
+    </div>
+
+    <div class="content">
+        <div class="counterBox">
+            <p>From</p>
+            <input type="text" placeholder="First number" id="firstNum" value="2">
+            <p>to</p>
+            <input type="text" placeholder="Second number" id="secondNum" value="100">
+
+            <div class="countBtn">
+                <button id="btn">計算</button>
+            </div>
+        </div>
+
+        <div class="answer">
+            <ul id="CommonMultipleAnswer"></ul>
+        </div>
+    </div>
+
+
+    <script src="./p2-primeNum.js"></script>
+</body>
+</html>

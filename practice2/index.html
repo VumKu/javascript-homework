@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求餘數 (%) 的運用</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .word{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 0 20px 0;
+        }
+        .title{
+            font-family: 'Monoton', cursive;
+            font-size: 50px;
+            color: rgb(184, 141, 219);
+            text-align: center;
+            margin: 40px 0 0 0;
+        }
+        .info{
+            color: rgb(209, 209, 209);
+            text-align: center;
+        }
+
+        .content{
+            display: flex;
+            margin: 50px 0 0 0;
+        }
+        .counterBox, .answer{
+            border: 1px solid rgb(255, 206, 206);
+            border-radius: 10px;
+            padding: 50px;
+
+            margin: 20px 30px;
+            color: #fff;
+        }
+        .answer{
+            width: 232px;
+        }
+        #CommonMultipleAnswer{
+            list-style-type: none;
+            padding: 0;
+        }
+        .countBtn{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="word">
+        <p class="title">Common Multiple Calculator</p>
+        <p class="info">計算100以內 X 和 Y 的公倍數</p>
+    </div>
+
+    <div class="content">
+        <div class="counterBox">
+            <p>第一個數字</p>
+            <input type="text" placeholder="First number" id="firstNum" value="">
+            <p>第二個數字</p>
+            <input type="text" placeholder="Second number" id="secondNum" value="">
+
+            <div class="countBtn">
+                <button id="btn">最小公倍數</button>
+                <button id="btn100">100內的公倍數</button>
+            </div>
+        </div>
+
+        <div class="answer">
+            <ul id="CommonMultipleAnswer"></ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="./p2-custom.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
